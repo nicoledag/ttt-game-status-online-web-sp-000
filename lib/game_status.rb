@@ -46,3 +46,17 @@ def draw?(board)
     return false
   end
 end
+
+def over?(board)
+  if won?(board) || full?(board) || draw?(board)
+    return true
+  else
+    false
+  end
+end
+
+ def winner(board)
+  if win_combination = won?(board)
+  return  board[win_combination.first]
+  end
+end
