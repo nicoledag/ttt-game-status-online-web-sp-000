@@ -36,7 +36,7 @@ WIN_COMBINATIONS.each do | win_combination |
 
 def full?(board)
 
-index = [board].all? do |index|
+all_full = [board].all? do |index|
 
 if index == "X" || index == "O"
 
