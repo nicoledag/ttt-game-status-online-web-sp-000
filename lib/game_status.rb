@@ -34,14 +34,12 @@ WIN_COMBINATIONS.each do | win_combination |
   end
 
 
-def full?(board)
-
-all_full = [board].all? do |index|
-
-if index == "X" || index == "O"
-return true
-end
+  def full?(board)
+  board.all? { |index| index == "X" || index == "O"  }
   end
-
-
+return
+ end
 end
+
+
+
