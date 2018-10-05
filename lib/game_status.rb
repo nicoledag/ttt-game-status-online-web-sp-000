@@ -38,6 +38,11 @@ WIN_COMBINATIONS.each do | win_combination |
   board.all? { |index| index == "X" || index == "O"  }
 end
 
-def draw?(board)
 
+def draw?(board)
+  if won?(board) == false && full?(board) == true
+    return true
+  else
+    return false
+  end
 end
