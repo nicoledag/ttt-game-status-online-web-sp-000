@@ -40,6 +40,3 @@ WIN_COMBINATIONS.each do | win_combination |
 return
  end
 end
-
-
-
