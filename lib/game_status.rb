@@ -39,7 +39,7 @@ def full?(board)
 all_full = [board].all? do |index|
 
 if index == "X" || index == "O"
-
+return true
 end
   end
 
